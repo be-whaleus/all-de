@@ -12,7 +12,31 @@
 is a playful, responsive game site with a fast canvas runner.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css /* Mobile (default) */
+.hero {
+  background: 
+    linear-gradient(rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.7)),
+    url('./assets/img/bg-mobile.jpg') no-repeat center center / cover;
+  color: #fff;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero {
+    background: 
+      linear-gradient(rgba(11, 18, 32, 0.6), rgba(11, 18, 32, 0.6)),
+      url('./assets/img/bg-tablet.jpg') no-repeat center center / cover;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    background: 
+      linear-gradient(rgba(11, 18, 32, 0.5), rgba(11, 18, 32, 0.5)),
+      url('./assets/img/bg-desktop.jpg') no-repeat center center / cover;
+  }
+} /> 
 </head>
 <body>
 <nav class="nav">
